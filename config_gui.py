@@ -106,6 +106,9 @@ class ConfigGUI:
         for recipient in recipients:
             display_text = f"{recipient['name']} - {recipient['phone']} - {recipient['message']}"
             self.recipients_listbox.insert(tk.END, display_text)
+        
+        # Update status after loading
+        self.update_status()
     
     def create_widgets(self):
         """Create the GUI widgets."""
