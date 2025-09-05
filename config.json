@@ -1,7 +1,7 @@
 {
     "camera_index": 1,
     "detection_confidence": 0.4,
-    "notification_cooldown": 5,
+    "notification_cooldown": 1,
     "recipient_phone_number": "7377421683",
     "recipient_email": "",
     "message_service": "iMessage",

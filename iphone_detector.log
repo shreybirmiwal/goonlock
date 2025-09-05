@@ -715,3 +715,378 @@
 2025-09-04 21:22:45,022 - INFO - Selected recipient: avi (5125765707‬)
 2025-09-04 21:22:46,175 - INFO - Message sent successfully to 5125765707‬
 2025-09-04 21:22:46,175 - INFO - Notification sent for detection #28 - continuing to monitor...
+2025-09-04 21:25:18,002 - INFO - Loading YOLOv8 model...
+2025-09-04 21:25:18,019 - INFO - YOLO model loaded successfully
+2025-09-04 21:25:19,139 - WARNING - Could not retrieve services list: 110:114: execution error: Messages got an error: Can’t get name of every account. (-1728)
+
+2025-09-04 21:25:19,140 - INFO - Starting iPhone detection...
+2025-09-04 21:25:20,175 - INFO - Camera initialized successfully
+2025-09-04 21:25:32,090 - INFO - Exiting...
+2025-09-04 21:25:32,128 - INFO - Cleanup completed
+2025-09-04 21:25:33,700 - INFO - Exiting...
+2025-09-04 21:25:33,741 - INFO - Cleanup completed
+2025-09-04 21:26:05,009 - INFO - Loading YOLOv8 model...
+2025-09-04 21:26:05,019 - INFO - YOLO model loaded successfully
+2025-09-04 21:26:06,348 - WARNING - Could not retrieve services list: 110:114: execution error: Messages got an error: Can’t get name of every account. (-1728)
+
+2025-09-04 21:26:06,349 - INFO - Starting iPhone detection...
+2025-09-04 21:26:07,493 - INFO - Camera initialized successfully
+2025-09-04 21:26:10,149 - INFO - Exiting...
+2025-09-04 21:26:10,188 - INFO - Cleanup completed
+2025-09-04 21:26:43,930 - INFO - Loading YOLOv8 model...
+2025-09-04 21:26:43,939 - INFO - YOLO model loaded successfully
+2025-09-04 21:26:45,065 - WARNING - Could not retrieve services list: 110:114: execution error: Messages got an error: Can’t get name of every account. (-1728)
+
+2025-09-04 21:26:45,065 - INFO - Starting iPhone detection...
+2025-09-04 21:26:46,197 - INFO - Camera initialized successfully
+2025-09-04 21:26:56,052 - INFO - Selected recipient: Mahathi (7377421683)
+2025-09-04 21:26:57,191 - INFO - Message sent successfully to 7377421683
+2025-09-04 21:26:57,191 - INFO - Notification sent for detection #1 - continuing to monitor...
+2025-09-04 21:27:01,485 - INFO - Selected recipient: Mahathi (7377421683)
+2025-09-04 21:27:02,601 - INFO - Message sent successfully to 7377421683
+2025-09-04 21:27:02,602 - INFO - Notification sent for detection #2 - continuing to monitor...
+2025-09-04 21:27:13,587 - INFO - Selected recipient: Mahathi (7377421683)
+2025-09-04 21:27:14,718 - INFO - Message sent successfully to 7377421683
+2025-09-04 21:27:14,718 - INFO - Notification sent for detection #3 - continuing to monitor...
+2025-09-04 21:27:16,720 - INFO - Phone detected (cooldown active) - Detection #4
+2025-09-04 21:27:16,789 - INFO - Phone detected (cooldown active) - Detection #5
+2025-09-04 21:27:16,821 - INFO - Phone detected (cooldown active) - Detection #6
+2025-09-04 21:27:16,920 - INFO - Phone detected (cooldown active) - Detection #7
+2025-09-04 21:27:16,953 - INFO - Phone detected (cooldown active) - Detection #8
+2025-09-04 21:27:16,988 - INFO - Phone detected (cooldown active) - Detection #9
+2025-09-04 21:27:17,020 - INFO - Phone detected (cooldown active) - Detection #10
+2025-09-04 21:27:17,054 - INFO - Phone detected (cooldown active) - Detection #11
+2025-09-04 21:27:17,087 - INFO - Phone detected (cooldown active) - Detection #12
+2025-09-04 21:27:17,120 - INFO - Phone detected (cooldown active) - Detection #13
+2025-09-04 21:27:17,153 - INFO - Phone detected (cooldown active) - Detection #14
+2025-09-04 21:27:17,188 - INFO - Phone detected (cooldown active) - Detection #15
+2025-09-04 21:27:17,221 - INFO - Phone detected (cooldown active) - Detection #16
+2025-09-04 21:27:17,253 - INFO - Phone detected (cooldown active) - Detection #17
+2025-09-04 21:27:17,287 - INFO - Phone detected (cooldown active) - Detection #18
+2025-09-04 21:27:17,320 - INFO - Phone detected (cooldown active) - Detection #19
+2025-09-04 21:27:17,353 - INFO - Phone detected (cooldown active) - Detection #20
+2025-09-04 21:27:17,388 - INFO - Phone detected (cooldown active) - Detection #21
+2025-09-04 21:27:17,419 - INFO - Phone detected (cooldown active) - Detection #22
+2025-09-04 21:27:17,452 - INFO - Phone detected (cooldown active) - Detection #23
+2025-09-04 21:27:17,487 - INFO - Phone detected (cooldown active) - Detection #24
+2025-09-04 21:27:17,520 - INFO - Phone detected (cooldown active) - Detection #25
+2025-09-04 21:27:17,552 - INFO - Phone detected (cooldown active) - Detection #26
+2025-09-04 21:27:17,588 - INFO - Phone detected (cooldown active) - Detection #27
+2025-09-04 21:27:17,854 - INFO - Phone detected (cooldown active) - Detection #28
+2025-09-04 21:27:17,920 - INFO - Phone detected (cooldown active) - Detection #29
+2025-09-04 21:27:17,954 - INFO - Phone detected (cooldown active) - Detection #30
+2025-09-04 21:27:17,988 - INFO - Phone detected (cooldown active) - Detection #31
+2025-09-04 21:27:20,687 - INFO - Selected recipient: avi (5125765707‬)
+2025-09-04 21:27:21,837 - INFO - Message sent successfully to 5125765707‬
+2025-09-04 21:27:21,838 - INFO - Notification sent for detection #32 - continuing to monitor...
+2025-09-04 21:27:23,422 - INFO - Phone detected (cooldown active) - Detection #33
+2025-09-04 21:27:23,454 - INFO - Phone detected (cooldown active) - Detection #34
+2025-09-04 21:27:23,488 - INFO - Phone detected (cooldown active) - Detection #35
+2025-09-04 21:27:23,590 - INFO - Phone detected (cooldown active) - Detection #36
+2025-09-04 21:27:23,623 - INFO - Phone detected (cooldown active) - Detection #37
+2025-09-04 21:27:23,654 - INFO - Phone detected (cooldown active) - Detection #38
+2025-09-04 21:27:23,755 - INFO - Phone detected (cooldown active) - Detection #39
+2025-09-04 21:27:23,789 - INFO - Phone detected (cooldown active) - Detection #40
+2025-09-04 21:27:24,588 - INFO - Phone detected (cooldown active) - Detection #41
+2025-09-04 21:27:24,622 - INFO - Phone detected (cooldown active) - Detection #42
+2025-09-04 21:27:24,654 - INFO - Phone detected (cooldown active) - Detection #43
+2025-09-04 21:27:24,688 - INFO - Phone detected (cooldown active) - Detection #44
+2025-09-04 21:27:24,755 - INFO - Phone detected (cooldown active) - Detection #45
+2025-09-04 21:27:24,789 - INFO - Phone detected (cooldown active) - Detection #46
+2025-09-04 21:27:25,022 - INFO - Phone detected (cooldown active) - Detection #47
+2025-09-04 21:27:25,054 - INFO - Phone detected (cooldown active) - Detection #48
+2025-09-04 21:27:25,088 - INFO - Phone detected (cooldown active) - Detection #49
+2025-09-04 21:27:34,759 - INFO - Exiting...
+2025-09-04 21:27:34,802 - INFO - Cleanup completed
+2025-09-04 21:27:38,002 - INFO - Loading YOLOv8 model...
+2025-09-04 21:27:38,012 - INFO - YOLO model loaded successfully
+2025-09-04 21:27:39,145 - WARNING - Could not retrieve services list: 110:114: execution error: Messages got an error: Can’t get name of every account. (-1728)
+
+2025-09-04 21:27:39,145 - INFO - Starting iPhone detection...
+2025-09-04 21:27:40,137 - INFO - Camera initialized successfully
+2025-09-04 21:27:46,492 - INFO - Selected recipient: avi (5125765707‬)
+2025-09-04 21:27:47,647 - INFO - Message sent successfully to 5125765707‬
+2025-09-04 21:27:47,647 - INFO - Notification sent for detection #1 - continuing to monitor...
+2025-09-04 21:27:52,791 - INFO - Selected recipient: avi (5125765707‬)
+2025-09-04 21:27:53,943 - INFO - Message sent successfully to 5125765707‬
+2025-09-04 21:27:53,943 - INFO - Notification sent for detection #2 - continuing to monitor...
+2025-09-04 21:27:54,159 - INFO - Phone detected (cooldown active) - Detection #3
+2025-09-04 21:27:54,225 - INFO - Phone detected (cooldown active) - Detection #4
+2025-09-04 21:27:54,258 - INFO - Phone detected (cooldown active) - Detection #5
+2025-09-04 21:27:54,325 - INFO - Phone detected (cooldown active) - Detection #6
+2025-09-04 21:27:54,457 - INFO - Phone detected (cooldown active) - Detection #7
+2025-09-04 21:27:55,360 - INFO - Phone detected (cooldown active) - Detection #8
+2025-09-04 21:27:55,392 - INFO - Phone detected (cooldown active) - Detection #9
+2025-09-04 21:27:55,526 - INFO - Phone detected (cooldown active) - Detection #10
+2025-09-04 21:27:55,560 - INFO - Phone detected (cooldown active) - Detection #11
+2025-09-04 21:27:55,593 - INFO - Phone detected (cooldown active) - Detection #12
+2025-09-04 21:27:56,294 - INFO - Phone detected (cooldown active) - Detection #13
+2025-09-04 21:27:56,325 - INFO - Phone detected (cooldown active) - Detection #14
+2025-09-04 21:27:56,360 - INFO - Phone detected (cooldown active) - Detection #15
+2025-09-04 21:27:56,391 - INFO - Phone detected (cooldown active) - Detection #16
+2025-09-04 21:27:56,426 - INFO - Phone detected (cooldown active) - Detection #17
+2025-09-04 21:27:56,459 - INFO - Phone detected (cooldown active) - Detection #18
+2025-09-04 21:27:56,493 - INFO - Phone detected (cooldown active) - Detection #19
+2025-09-04 21:27:56,525 - INFO - Phone detected (cooldown active) - Detection #20
+2025-09-04 21:27:56,559 - INFO - Phone detected (cooldown active) - Detection #21
+2025-09-04 21:27:56,592 - INFO - Phone detected (cooldown active) - Detection #22
+2025-09-04 21:27:56,626 - INFO - Phone detected (cooldown active) - Detection #23
+2025-09-04 21:27:56,659 - INFO - Phone detected (cooldown active) - Detection #24
+2025-09-04 21:27:56,693 - INFO - Phone detected (cooldown active) - Detection #25
+2025-09-04 21:27:56,725 - INFO - Phone detected (cooldown active) - Detection #26
+2025-09-04 21:27:56,759 - INFO - Phone detected (cooldown active) - Detection #27
+2025-09-04 21:27:56,793 - INFO - Phone detected (cooldown active) - Detection #28
+2025-09-04 21:27:56,826 - INFO - Phone detected (cooldown active) - Detection #29
+2025-09-04 21:27:56,859 - INFO - Phone detected (cooldown active) - Detection #30
+2025-09-04 21:27:56,893 - INFO - Phone detected (cooldown active) - Detection #31
+2025-09-04 21:27:56,925 - INFO - Phone detected (cooldown active) - Detection #32
+2025-09-04 21:27:57,226 - INFO - Phone detected (cooldown active) - Detection #33
+2025-09-04 21:27:57,259 - INFO - Phone detected (cooldown active) - Detection #34
+2025-09-04 21:27:57,325 - INFO - Phone detected (cooldown active) - Detection #35
+2025-09-04 21:27:57,359 - INFO - Phone detected (cooldown active) - Detection #36
+2025-09-04 21:27:57,392 - INFO - Phone detected (cooldown active) - Detection #37
+2025-09-04 21:27:57,425 - INFO - Phone detected (cooldown active) - Detection #38
+2025-09-04 21:27:57,459 - INFO - Phone detected (cooldown active) - Detection #39
+2025-09-04 21:27:57,493 - INFO - Phone detected (cooldown active) - Detection #40
+2025-09-04 21:27:57,525 - INFO - Phone detected (cooldown active) - Detection #41
+2025-09-04 21:27:57,560 - INFO - Phone detected (cooldown active) - Detection #42
+2025-09-04 21:27:57,592 - INFO - Phone detected (cooldown active) - Detection #43
+2025-09-04 21:28:01,561 - INFO - Selected recipient: avi (5125765707‬)
+2025-09-04 21:28:02,715 - INFO - Message sent successfully to 5125765707‬
+2025-09-04 21:28:02,715 - INFO - Notification sent for detection #44 - continuing to monitor...
+2025-09-04 21:28:02,785 - INFO - Phone detected (cooldown active) - Detection #45
+2025-09-04 21:28:02,827 - INFO - Phone detected (cooldown active) - Detection #46
+2025-09-04 21:28:03,395 - INFO - Phone detected (cooldown active) - Detection #47
+2025-09-04 21:28:03,429 - INFO - Phone detected (cooldown active) - Detection #48
+2025-09-04 21:28:03,462 - INFO - Phone detected (cooldown active) - Detection #49
+2025-09-04 21:28:03,495 - INFO - Phone detected (cooldown active) - Detection #50
+2025-09-04 21:28:03,527 - INFO - Phone detected (cooldown active) - Detection #51
+2025-09-04 21:28:03,561 - INFO - Phone detected (cooldown active) - Detection #52
+2025-09-04 21:28:03,593 - INFO - Phone detected (cooldown active) - Detection #53
+2025-09-04 21:28:03,627 - INFO - Phone detected (cooldown active) - Detection #54
+2025-09-04 21:28:03,660 - INFO - Phone detected (cooldown active) - Detection #55
+2025-09-04 21:28:03,861 - INFO - Phone detected (cooldown active) - Detection #56
+2025-09-04 21:28:03,894 - INFO - Phone detected (cooldown active) - Detection #57
+2025-09-04 21:28:03,927 - INFO - Phone detected (cooldown active) - Detection #58
+2025-09-04 21:28:03,962 - INFO - Phone detected (cooldown active) - Detection #59
+2025-09-04 21:28:03,995 - INFO - Phone detected (cooldown active) - Detection #60
+2025-09-04 21:28:04,694 - INFO - Phone detected (cooldown active) - Detection #61
+2025-09-04 21:28:04,727 - INFO - Phone detected (cooldown active) - Detection #62
+2025-09-04 21:28:04,761 - INFO - Phone detected (cooldown active) - Detection #63
+2025-09-04 21:28:04,793 - INFO - Phone detected (cooldown active) - Detection #64
+2025-09-04 21:28:04,828 - INFO - Phone detected (cooldown active) - Detection #65
+2025-09-04 21:28:04,859 - INFO - Phone detected (cooldown active) - Detection #66
+2025-09-04 21:28:05,761 - INFO - Phone detected (cooldown active) - Detection #67
+2025-09-04 21:28:05,792 - INFO - Phone detected (cooldown active) - Detection #68
+2025-09-04 21:28:05,828 - INFO - Phone detected (cooldown active) - Detection #69
+2025-09-04 21:28:05,860 - INFO - Phone detected (cooldown active) - Detection #70
+2025-09-04 21:28:05,926 - INFO - Phone detected (cooldown active) - Detection #71
+2025-09-04 21:28:11,395 - INFO - Selected recipient: Mahathi (7377421683)
+2025-09-04 21:28:12,536 - INFO - Message sent successfully to 7377421683
+2025-09-04 21:28:12,536 - INFO - Notification sent for detection #72 - continuing to monitor...
+2025-09-04 21:28:13,628 - INFO - Phone detected (cooldown active) - Detection #73
+2025-09-04 21:28:16,163 - INFO - Phone detected (cooldown active) - Detection #74
+2025-09-04 21:28:16,195 - INFO - Phone detected (cooldown active) - Detection #75
+2025-09-04 21:28:16,229 - INFO - Phone detected (cooldown active) - Detection #76
+2025-09-04 21:28:16,261 - INFO - Phone detected (cooldown active) - Detection #77
+2025-09-04 21:28:16,296 - INFO - Phone detected (cooldown active) - Detection #78
+2025-09-04 21:28:19,195 - INFO - Selected recipient: Mahathi (7377421683)
+2025-09-04 21:28:20,347 - INFO - Message sent successfully to 7377421683
+2025-09-04 21:28:20,348 - INFO - Notification sent for detection #79 - continuing to monitor...
+2025-09-04 21:28:21,329 - INFO - Phone detected (cooldown active) - Detection #80
+2025-09-04 21:28:21,363 - INFO - Phone detected (cooldown active) - Detection #81
+2025-09-04 21:28:21,396 - INFO - Phone detected (cooldown active) - Detection #82
+2025-09-04 21:28:21,430 - INFO - Phone detected (cooldown active) - Detection #83
+2025-09-04 21:28:21,461 - INFO - Phone detected (cooldown active) - Detection #84
+2025-09-04 21:28:21,496 - INFO - Phone detected (cooldown active) - Detection #85
+2025-09-04 21:28:21,530 - INFO - Phone detected (cooldown active) - Detection #86
+2025-09-04 21:28:21,566 - INFO - Phone detected (cooldown active) - Detection #87
+2025-09-04 21:28:21,635 - INFO - Phone detected (cooldown active) - Detection #88
+2025-09-04 21:28:21,699 - INFO - Phone detected (cooldown active) - Detection #89
+2025-09-04 21:28:21,764 - INFO - Phone detected (cooldown active) - Detection #90
+2025-09-04 21:28:21,796 - INFO - Phone detected (cooldown active) - Detection #91
+2025-09-04 21:28:21,829 - INFO - Phone detected (cooldown active) - Detection #92
+2025-09-04 21:28:21,929 - INFO - Phone detected (cooldown active) - Detection #93
+2025-09-04 21:28:21,964 - INFO - Phone detected (cooldown active) - Detection #94
+2025-09-04 21:28:21,996 - INFO - Phone detected (cooldown active) - Detection #95
+2025-09-04 21:28:22,029 - INFO - Phone detected (cooldown active) - Detection #96
+2025-09-04 21:28:22,063 - INFO - Phone detected (cooldown active) - Detection #97
+2025-09-04 21:28:22,098 - INFO - Phone detected (cooldown active) - Detection #98
+2025-09-04 21:28:22,129 - INFO - Phone detected (cooldown active) - Detection #99
+2025-09-04 21:28:22,163 - INFO - Phone detected (cooldown active) - Detection #100
+2025-09-04 21:28:22,194 - INFO - Phone detected (cooldown active) - Detection #101
+2025-09-04 21:28:22,229 - INFO - Phone detected (cooldown active) - Detection #102
+2025-09-04 21:28:22,263 - INFO - Phone detected (cooldown active) - Detection #103
+2025-09-04 21:28:22,297 - INFO - Phone detected (cooldown active) - Detection #104
+2025-09-04 21:28:22,329 - INFO - Phone detected (cooldown active) - Detection #105
+2025-09-04 21:28:22,363 - INFO - Phone detected (cooldown active) - Detection #106
+2025-09-04 21:28:22,396 - INFO - Phone detected (cooldown active) - Detection #107
+2025-09-04 21:28:22,429 - INFO - Phone detected (cooldown active) - Detection #108
+2025-09-04 21:28:22,462 - INFO - Phone detected (cooldown active) - Detection #109
+2025-09-04 21:28:22,496 - INFO - Phone detected (cooldown active) - Detection #110
+2025-09-04 21:28:22,529 - INFO - Phone detected (cooldown active) - Detection #111
+2025-09-04 21:28:22,564 - INFO - Phone detected (cooldown active) - Detection #112
+2025-09-04 21:28:22,596 - INFO - Phone detected (cooldown active) - Detection #113
+2025-09-04 21:28:22,630 - INFO - Phone detected (cooldown active) - Detection #114
+2025-09-04 21:28:22,763 - INFO - Phone detected (cooldown active) - Detection #115
+2025-09-04 21:28:22,795 - INFO - Phone detected (cooldown active) - Detection #116
+2025-09-04 21:28:22,829 - INFO - Phone detected (cooldown active) - Detection #117
+2025-09-04 21:28:22,996 - INFO - Phone detected (cooldown active) - Detection #118
+2025-09-04 21:28:23,030 - INFO - Phone detected (cooldown active) - Detection #119
+2025-09-04 21:28:23,061 - INFO - Phone detected (cooldown active) - Detection #120
+2025-09-04 21:28:23,330 - INFO - Phone detected (cooldown active) - Detection #121
+2025-09-04 21:28:23,362 - INFO - Phone detected (cooldown active) - Detection #122
+2025-09-04 21:28:23,396 - INFO - Phone detected (cooldown active) - Detection #123
+2025-09-04 21:28:23,429 - INFO - Phone detected (cooldown active) - Detection #124
+2025-09-04 21:28:23,463 - INFO - Phone detected (cooldown active) - Detection #125
+2025-09-04 21:28:23,497 - INFO - Phone detected (cooldown active) - Detection #126
+2025-09-04 21:28:23,528 - INFO - Phone detected (cooldown active) - Detection #127
+2025-09-04 21:28:23,563 - INFO - Phone detected (cooldown active) - Detection #128
+2025-09-04 21:28:23,595 - INFO - Phone detected (cooldown active) - Detection #129
+2025-09-04 21:28:23,629 - INFO - Phone detected (cooldown active) - Detection #130
+2025-09-04 21:28:23,663 - INFO - Phone detected (cooldown active) - Detection #131
+2025-09-04 21:28:23,697 - INFO - Phone detected (cooldown active) - Detection #132
+2025-09-04 21:28:23,729 - INFO - Phone detected (cooldown active) - Detection #133
+2025-09-04 21:28:23,763 - INFO - Phone detected (cooldown active) - Detection #134
+2025-09-04 21:28:23,796 - INFO - Phone detected (cooldown active) - Detection #135
+2025-09-04 21:28:23,829 - INFO - Phone detected (cooldown active) - Detection #136
+2025-09-04 21:28:23,863 - INFO - Phone detected (cooldown active) - Detection #137
+2025-09-04 21:28:23,897 - INFO - Phone detected (cooldown active) - Detection #138
+2025-09-04 21:28:23,929 - INFO - Phone detected (cooldown active) - Detection #139
+2025-09-04 21:28:23,963 - INFO - Phone detected (cooldown active) - Detection #140
+2025-09-04 21:28:23,996 - INFO - Phone detected (cooldown active) - Detection #141
+2025-09-04 21:28:24,029 - INFO - Phone detected (cooldown active) - Detection #142
+2025-09-04 21:28:24,063 - INFO - Phone detected (cooldown active) - Detection #143
+2025-09-04 21:28:24,097 - INFO - Phone detected (cooldown active) - Detection #144
+2025-09-04 21:28:24,128 - INFO - Phone detected (cooldown active) - Detection #145
+2025-09-04 21:28:24,163 - INFO - Phone detected (cooldown active) - Detection #146
+2025-09-04 21:28:24,195 - INFO - Phone detected (cooldown active) - Detection #147
+2025-09-04 21:28:24,229 - INFO - Selected recipient: avi (5125765707‬)
+2025-09-04 21:28:25,365 - INFO - Message sent successfully to 5125765707‬
+2025-09-04 21:28:25,365 - INFO - Notification sent for detection #148 - continuing to monitor...
+2025-09-04 21:28:25,428 - INFO - Phone detected (cooldown active) - Detection #149
+2025-09-04 21:28:25,462 - INFO - Phone detected (cooldown active) - Detection #150
+2025-09-04 21:28:25,499 - INFO - Phone detected (cooldown active) - Detection #151
+2025-09-04 21:28:25,564 - INFO - Phone detected (cooldown active) - Detection #152
+2025-09-04 21:28:25,595 - INFO - Phone detected (cooldown active) - Detection #153
+2025-09-04 21:28:25,629 - INFO - Phone detected (cooldown active) - Detection #154
+2025-09-04 21:28:25,662 - INFO - Phone detected (cooldown active) - Detection #155
+2025-09-04 21:28:25,698 - INFO - Phone detected (cooldown active) - Detection #156
+2025-09-04 21:28:25,730 - INFO - Phone detected (cooldown active) - Detection #157
+2025-09-04 21:28:25,763 - INFO - Phone detected (cooldown active) - Detection #158
+2025-09-04 21:28:25,796 - INFO - Phone detected (cooldown active) - Detection #159
+2025-09-04 21:28:25,829 - INFO - Phone detected (cooldown active) - Detection #160
+2025-09-04 21:28:25,862 - INFO - Phone detected (cooldown active) - Detection #161
+2025-09-04 21:28:25,898 - INFO - Phone detected (cooldown active) - Detection #162
+2025-09-04 21:28:25,928 - INFO - Phone detected (cooldown active) - Detection #163
+2025-09-04 21:28:25,966 - INFO - Phone detected (cooldown active) - Detection #164
+2025-09-04 21:28:26,028 - INFO - Phone detected (cooldown active) - Detection #165
+2025-09-04 21:28:26,062 - INFO - Phone detected (cooldown active) - Detection #166
+2025-09-04 21:28:26,096 - INFO - Phone detected (cooldown active) - Detection #167
+2025-09-04 21:28:26,129 - INFO - Phone detected (cooldown active) - Detection #168
+2025-09-04 21:28:26,163 - INFO - Phone detected (cooldown active) - Detection #169
+2025-09-04 21:28:26,196 - INFO - Phone detected (cooldown active) - Detection #170
+2025-09-04 21:28:26,262 - INFO - Phone detected (cooldown active) - Detection #171
+2025-09-04 21:28:26,297 - INFO - Phone detected (cooldown active) - Detection #172
+2025-09-04 21:28:26,329 - INFO - Phone detected (cooldown active) - Detection #173
+2025-09-04 21:28:26,363 - INFO - Phone detected (cooldown active) - Detection #174
+2025-09-04 21:28:26,396 - INFO - Phone detected (cooldown active) - Detection #175
+2025-09-04 21:28:26,429 - INFO - Phone detected (cooldown active) - Detection #176
+2025-09-04 21:28:26,463 - INFO - Phone detected (cooldown active) - Detection #177
+2025-09-04 21:28:26,497 - INFO - Phone detected (cooldown active) - Detection #178
+2025-09-04 21:28:26,528 - INFO - Phone detected (cooldown active) - Detection #179
+2025-09-04 21:28:26,566 - INFO - Phone detected (cooldown active) - Detection #180
+2025-09-04 21:28:26,631 - INFO - Phone detected (cooldown active) - Detection #181
+2025-09-04 21:28:26,663 - INFO - Phone detected (cooldown active) - Detection #182
+2025-09-04 21:28:26,698 - INFO - Phone detected (cooldown active) - Detection #183
+2025-09-04 21:28:26,731 - INFO - Phone detected (cooldown active) - Detection #184
+2025-09-04 21:28:26,764 - INFO - Phone detected (cooldown active) - Detection #185
+2025-09-04 21:28:26,797 - INFO - Phone detected (cooldown active) - Detection #186
+2025-09-04 21:28:26,831 - INFO - Phone detected (cooldown active) - Detection #187
+2025-09-04 21:28:26,863 - INFO - Phone detected (cooldown active) - Detection #188
+2025-09-04 21:28:26,898 - INFO - Phone detected (cooldown active) - Detection #189
+2025-09-04 21:28:26,930 - INFO - Phone detected (cooldown active) - Detection #190
+2025-09-04 21:28:26,964 - INFO - Phone detected (cooldown active) - Detection #191
+2025-09-04 21:28:26,996 - INFO - Phone detected (cooldown active) - Detection #192
+2025-09-04 21:28:27,029 - INFO - Phone detected (cooldown active) - Detection #193
+2025-09-04 21:28:27,064 - INFO - Phone detected (cooldown active) - Detection #194
+2025-09-04 21:28:27,097 - INFO - Phone detected (cooldown active) - Detection #195
+2025-09-04 21:28:27,129 - INFO - Phone detected (cooldown active) - Detection #196
+2025-09-04 21:28:27,165 - INFO - Phone detected (cooldown active) - Detection #197
+2025-09-04 21:28:27,196 - INFO - Phone detected (cooldown active) - Detection #198
+2025-09-04 21:28:27,229 - INFO - Phone detected (cooldown active) - Detection #199
+2025-09-04 21:28:27,263 - INFO - Phone detected (cooldown active) - Detection #200
+2025-09-04 21:28:27,298 - INFO - Phone detected (cooldown active) - Detection #201
+2025-09-04 21:28:27,330 - INFO - Phone detected (cooldown active) - Detection #202
+2025-09-04 21:28:27,363 - INFO - Phone detected (cooldown active) - Detection #203
+2025-09-04 21:28:27,396 - INFO - Phone detected (cooldown active) - Detection #204
+2025-09-04 21:28:27,429 - INFO - Phone detected (cooldown active) - Detection #205
+2025-09-04 21:28:27,464 - INFO - Phone detected (cooldown active) - Detection #206
+2025-09-04 21:28:27,497 - INFO - Phone detected (cooldown active) - Detection #207
+2025-09-04 21:28:27,529 - INFO - Phone detected (cooldown active) - Detection #208
+2025-09-04 21:28:27,563 - INFO - Phone detected (cooldown active) - Detection #209
+2025-09-04 21:28:27,596 - INFO - Phone detected (cooldown active) - Detection #210
+2025-09-04 21:28:27,630 - INFO - Phone detected (cooldown active) - Detection #211
+2025-09-04 21:28:27,697 - INFO - Phone detected (cooldown active) - Detection #212
+2025-09-04 21:28:27,729 - INFO - Phone detected (cooldown active) - Detection #213
+2025-09-04 21:28:27,763 - INFO - Phone detected (cooldown active) - Detection #214
+2025-09-04 21:28:27,897 - INFO - Phone detected (cooldown active) - Detection #215
+2025-09-04 21:28:27,963 - INFO - Phone detected (cooldown active) - Detection #216
+2025-09-04 21:28:27,996 - INFO - Phone detected (cooldown active) - Detection #217
+2025-09-04 21:28:28,029 - INFO - Phone detected (cooldown active) - Detection #218
+2025-09-04 21:28:28,163 - INFO - Phone detected (cooldown active) - Detection #219
+2025-09-04 21:28:28,196 - INFO - Phone detected (cooldown active) - Detection #220
+2025-09-04 21:28:28,263 - INFO - Phone detected (cooldown active) - Detection #221
+2025-09-04 21:28:28,297 - INFO - Phone detected (cooldown active) - Detection #222
+2025-09-04 21:28:28,329 - INFO - Phone detected (cooldown active) - Detection #223
+2025-09-04 21:28:28,796 - INFO - Phone detected (cooldown active) - Detection #224
+2025-09-04 21:28:29,429 - INFO - Selected recipient: avi (5125765707‬)
+2025-09-04 21:28:30,570 - INFO - Message sent successfully to 5125765707‬
+2025-09-04 21:28:30,570 - INFO - Notification sent for detection #225 - continuing to monitor...
+2025-09-04 21:28:31,664 - INFO - Phone detected (cooldown active) - Detection #226
+2025-09-04 21:28:31,703 - INFO - Phone detected (cooldown active) - Detection #227
+2025-09-04 21:28:31,766 - INFO - Phone detected (cooldown active) - Detection #228
+2025-09-04 21:28:31,799 - INFO - Phone detected (cooldown active) - Detection #229
+2025-09-04 21:28:31,831 - INFO - Phone detected (cooldown active) - Detection #230
+2025-09-04 21:28:31,864 - INFO - Phone detected (cooldown active) - Detection #231
+2025-09-04 21:28:42,731 - INFO - Selected recipient: Mahathi (7377421683)
+2025-09-04 21:28:43,865 - INFO - Message sent successfully to 7377421683
+2025-09-04 21:28:43,866 - INFO - Notification sent for detection #232 - continuing to monitor...
+2025-09-04 21:28:46,899 - INFO - Phone detected (cooldown active) - Detection #233
+2025-09-04 21:28:46,932 - INFO - Phone detected (cooldown active) - Detection #234
+2025-09-04 21:28:46,967 - INFO - Phone detected (cooldown active) - Detection #235
+2025-09-04 21:28:46,998 - INFO - Phone detected (cooldown active) - Detection #236
+2025-09-04 21:28:47,033 - INFO - Phone detected (cooldown active) - Detection #237
+2025-09-04 21:28:47,066 - INFO - Phone detected (cooldown active) - Detection #238
+2025-09-04 21:28:47,099 - INFO - Phone detected (cooldown active) - Detection #239
+2025-09-04 21:28:47,132 - INFO - Phone detected (cooldown active) - Detection #240
+2025-09-04 21:28:47,167 - INFO - Phone detected (cooldown active) - Detection #241
+2025-09-04 21:28:47,199 - INFO - Phone detected (cooldown active) - Detection #242
+2025-09-04 21:28:47,232 - INFO - Phone detected (cooldown active) - Detection #243
+2025-09-04 21:28:47,266 - INFO - Phone detected (cooldown active) - Detection #244
+2025-09-04 21:28:47,299 - INFO - Phone detected (cooldown active) - Detection #245
+2025-09-04 21:28:47,332 - INFO - Phone detected (cooldown active) - Detection #246
+2025-09-04 21:28:47,367 - INFO - Phone detected (cooldown active) - Detection #247
+2025-09-04 21:28:47,398 - INFO - Phone detected (cooldown active) - Detection #248
+2025-09-04 21:28:47,433 - INFO - Phone detected (cooldown active) - Detection #249
+2025-09-04 21:28:47,465 - INFO - Phone detected (cooldown active) - Detection #250
+2025-09-04 21:28:47,501 - INFO - Phone detected (cooldown active) - Detection #251
+2025-09-04 21:28:47,532 - INFO - Phone detected (cooldown active) - Detection #252
+2025-09-04 21:28:47,567 - INFO - Phone detected (cooldown active) - Detection #253
+2025-09-04 21:28:47,599 - INFO - Phone detected (cooldown active) - Detection #254
+2025-09-04 21:28:47,633 - INFO - Phone detected (cooldown active) - Detection #255
+2025-09-04 21:28:47,665 - INFO - Phone detected (cooldown active) - Detection #256
+2025-09-04 21:28:47,700 - INFO - Phone detected (cooldown active) - Detection #257
+2025-09-04 21:28:47,732 - INFO - Selected recipient: avi (5125765707‬)
+2025-09-04 21:28:48,863 - INFO - Message sent successfully to 5125765707‬
+2025-09-04 21:28:48,863 - INFO - Notification sent for detection #258 - continuing to monitor...
+2025-09-04 21:28:50,167 - INFO - Phone detected (cooldown active) - Detection #259
+2025-09-04 21:28:51,366 - INFO - Phone detected (cooldown active) - Detection #260
+2025-09-04 21:28:52,532 - INFO - Phone detected (cooldown active) - Detection #261
+2025-09-04 21:28:52,566 - INFO - Phone detected (cooldown active) - Detection #262
+2025-09-04 21:28:53,299 - INFO - Selected recipient: avi (5125765707‬)
+2025-09-04 21:28:54,447 - INFO - Message sent successfully to 5125765707‬
+2025-09-04 21:28:54,447 - INFO - Notification sent for detection #263 - continuing to monitor...
+2025-09-04 21:29:25,937 - INFO - Selected recipient: avi (5125765707‬)
+2025-09-04 21:29:27,079 - INFO - Message sent successfully to 5125765707‬
+2025-09-04 21:29:27,079 - INFO - Notification sent for detection #264 - continuing to monitor...
