@@ -10,7 +10,10 @@ Phone Camera Detector with macOS Messages - A simple script that watches your ca
    ```
 
 2. **Configure settings:**
-   Edit `config.json` with your phone number and preferences.
+   ```bash
+   python3 config_gui.py
+   ```
+   Or edit `config.json` manually.
 
 3. **Run the detector:**
    ```bash
@@ -20,6 +23,7 @@ Phone Camera Detector with macOS Messages - A simple script that watches your ca
 ## Files
 
 - `iphone_detector.py` - Main detection script
+- `config_gui.py` - Configuration GUI
 - `macos_messenger.py` - Messages integration
 - `config.json` - Configuration settings
 - `requirements.txt` - Python dependencies
@@ -27,14 +31,18 @@ Phone Camera Detector with macOS Messages - A simple script that watches your ca
 
 ## Configuration
 
-Edit `config.json`:
+Use the GUI: `python3 config_gui.py`
+
+Or edit `config.json` manually:
 ```json
 {
     "camera_index": 0,
     "detection_confidence": 0.5,
     "notification_cooldown": 60,
     "recipient_phone_number": "+1234567890",
-    "message_service": "iMessage"
+    "recipient_email": "example@icloud.com",
+    "message_service": "iMessage",
+    "custom_message": "🚨 Phone detected!"
 }
 ```
 

@@ -58,6 +58,7 @@ class iPhoneDetector:
             "recipient_phone_number": "",
             "recipient_email": "",
             "message_service": "iMessage",  # "iMessage" or "SMS"
+            "custom_message": "🚨 Phone detected!",
             "detection_area": {
                 "enabled": False,
                 "x": 0,
@@ -234,7 +235,8 @@ class iPhoneDetector:
                     
                     # Send notification if cooldown period has passed
                     if current_time - self.last_notification_time > self.notification_cooldown:
-                        message = f"🚨 Phone detected! Confidence: {confidence:.2f} at {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}"
+                        custom_msg = self.config.get('custom_message', '🚨 Phone detected!')
+                        message = f"{custom_msg} Confidence: {confidence:.2f} at {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}"
                         
                         if self.send_notification(message):
                             self.last_notification_time = current_time
