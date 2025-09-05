@@ -116,11 +116,16 @@ class ConfigGUI:
         # Title
         title_label = ttk.Label(main_frame, text="iPhone Detector Configuration", 
                                font=("Arial", 16, "bold"))
-        title_label.grid(row=0, column=0, columnspan=2, pady=(0, 20))
+        title_label.grid(row=0, column=0, columnspan=2, pady=(0, 10))
+        
+        # Status indicator
+        self.status_label = ttk.Label(main_frame, text="📋 Step 1: Configure your settings below", 
+                                     font=("Arial", 10), foreground="blue")
+        self.status_label.grid(row=1, column=0, columnspan=2, pady=(0, 20))
         
         # Camera Settings
         camera_frame = ttk.LabelFrame(main_frame, text="Camera Settings", padding="10")
-        camera_frame.grid(row=1, column=0, columnspan=2, sticky=(tk.W, tk.E), pady=(0, 10))
+        camera_frame.grid(row=2, column=0, columnspan=2, sticky=(tk.W, tk.E), pady=(0, 10))
         
         ttk.Label(camera_frame, text="Camera Index:").grid(row=0, column=0, sticky=tk.W, pady=2)
         self.camera_index_var = tk.StringVar()
@@ -130,7 +135,7 @@ class ConfigGUI:
         
         # Detection Settings
         detection_frame = ttk.LabelFrame(main_frame, text="Detection Settings", padding="10")
-        detection_frame.grid(row=2, column=0, columnspan=2, sticky=(tk.W, tk.E), pady=(0, 10))
+        detection_frame.grid(row=3, column=0, columnspan=2, sticky=(tk.W, tk.E), pady=(0, 10))
         
         ttk.Label(detection_frame, text="Confidence Threshold:").grid(row=0, column=0, sticky=tk.W, pady=2)
         self.confidence_var = tk.StringVar()
@@ -145,7 +150,7 @@ class ConfigGUI:
         
         # Recipients Settings
         recipients_frame = ttk.LabelFrame(main_frame, text="Recipients", padding="10")
-        recipients_frame.grid(row=3, column=0, columnspan=2, sticky=(tk.W, tk.E), pady=(0, 10))
+        recipients_frame.grid(row=4, column=0, columnspan=2, sticky=(tk.W, tk.E), pady=(0, 10))
         
         # Recipients list
         ttk.Label(recipients_frame, text="Recipients:").grid(row=0, column=0, sticky=tk.W, pady=2)
@@ -193,12 +198,19 @@ class ConfigGUI:
         
         # Main buttons
         button_frame = ttk.Frame(main_frame)
-        button_frame.grid(row=4, column=0, columnspan=2, pady=(20, 0))
+        button_frame.grid(row=5, column=0, columnspan=2, pady=(20, 0))
         
         ttk.Button(button_frame, text="Save Configuration", 
                   command=self.save_config).grid(row=0, column=0, padx=(0, 10))
-        ttk.Button(button_frame, text="Start Detector", 
-                  command=self.start_detector).grid(row=0, column=1)
+        
+        # Make Start Detector button more prominent
+        start_button = ttk.Button(button_frame, text="🚀 START DETECTOR", 
+                                 command=self.start_detector)
+        start_button.grid(row=0, column=1, padx=(0, 10))
+        
+        # Add help button
+        ttk.Button(button_frame, text="❓ Help", 
+                  command=self.show_help).grid(row=0, column=2)
         
         # Configure grid weights
         main_frame.columnconfigure(1, weight=1)
@@ -224,12 +236,16 @@ class ConfigGUI:
         self.name_var.set("")
         self.phone_var.set("")
         self.message_var.set("")
+        
+        # Update status
+        self.update_status()
     
     def remove_recipient(self):
         """Remove selected recipient from the list."""
         selection = self.recipients_listbox.curselection()
         if selection:
             self.recipients_listbox.delete(selection[0])
+            self.update_status()
         else:
             messagebox.showwarning("Warning", "Please select a recipient to remove")
     
@@ -271,15 +287,94 @@ class ConfigGUI:
             import subprocess
             import sys
             
+            # Check if recipients are configured
+            if self.recipients_listbox.size() == 0:
+                messagebox.showerror("Error", "Please add at least one recipient before starting the detector!")
+                return
+            
             # Save config first
             self.save_config()
             
             # Start the detector
             subprocess.Popen([sys.executable, "iphone_detector.py"])
-            messagebox.showinfo("Success", "iPhone detector started!")
+            messagebox.showinfo("Success", 
+                              "🚀 iPhone detector started!\n\n"
+                              "The camera window should open shortly.\n"
+                              "Press 'q' in the camera window to quit.\n"
+                              "Press 's' to save a frame.\n\n"
+                              "The detector will randomly send messages to your configured recipients when phones are detected!")
             
         except Exception as e:
             messagebox.showerror("Error", f"Error starting detector: {e}")
+    
+    def show_help(self):
+        """Show help information."""
+        help_text = """
+📱 iPhone Detector Help
+
+1. CONFIGURE RECIPIENTS:
+   • Add people with their phone numbers and custom messages
+   • Example: "Mom" - "5129427299" - "I'm on my phone while working!"
+
+2. TEST YOUR SETUP:
+   • Click "Test All Messages" to verify messaging works
+   • Make sure Messages app permissions are granted
+
+3. START DETECTION:
+   • Click "🚀 START DETECTOR" to begin monitoring
+   • A camera window will open showing the live feed
+   • The detector will randomly pick someone to text when a phone is detected
+
+4. CONTROLS:
+   • Press 'q' in camera window to quit
+   • Press 's' in camera window to save current frame
+
+5. PERMISSIONS:
+   • Go to System Preferences > Security & Privacy > Privacy > Automation
+   • Allow Terminal/IDE to control Messages app
+
+6. TROUBLESHOOTING:
+   • Make sure you've sent at least one message manually to each recipient first
+   • Check that phone numbers are in correct format (+1XXXXXXXXXX)
+   • Verify Messages app is signed in to your Apple ID
+        """
+        
+        # Create help window
+        help_window = tk.Toplevel(self.root)
+        help_window.title("Help - iPhone Detector")
+        help_window.geometry("600x500")
+        help_window.resizable(False, False)
+        
+        # Create text widget with scrollbar
+        text_frame = ttk.Frame(help_window, padding="10")
+        text_frame.pack(fill=tk.BOTH, expand=True)
+        
+        text_widget = tk.Text(text_frame, wrap=tk.WORD, font=("Arial", 10))
+        scrollbar = ttk.Scrollbar(text_frame, orient=tk.VERTICAL, command=text_widget.yview)
+        text_widget.configure(yscrollcommand=scrollbar.set)
+        
+        text_widget.pack(side=tk.LEFT, fill=tk.BOTH, expand=True)
+        scrollbar.pack(side=tk.RIGHT, fill=tk.Y)
+        
+        text_widget.insert(tk.END, help_text)
+        text_widget.config(state=tk.DISABLED)
+        
+        # Close button
+        ttk.Button(help_window, text="Close", command=help_window.destroy).pack(pady=10)
+    
+    def update_status(self):
+        """Update the status label based on current configuration."""
+        recipient_count = self.recipients_listbox.size()
+        
+        if recipient_count == 0:
+            self.status_label.config(text="📋 Step 1: Add at least one recipient to continue", 
+                                   foreground="red")
+        elif recipient_count == 1:
+            self.status_label.config(text="✅ Ready! Click '🚀 START DETECTOR' to begin monitoring", 
+                                   foreground="green")
+        else:
+            self.status_label.config(text=f"✅ Ready! {recipient_count} recipients configured. Click '🚀 START DETECTOR' to begin", 
+                                   foreground="green")
     
     def run(self):
         """Run the GUI."""

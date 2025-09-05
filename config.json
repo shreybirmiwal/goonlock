@@ -11,5 +11,22 @@
         "y": 0,
         "width": 640,
         "height": 480
-    }
+    },
+    "recipients": [
+        {
+            "name": "Mom",
+            "phone": "",
+            "message": "I'm on my phone while working!"
+        },
+        {
+            "name": "avi",
+            "phone": "5125765707\u202c",
+            "message": "AVI IM ON MY PHONE WHILE WORKING"
+        },
+        {
+            "name": "Mahathi",
+            "phone": "7377421683",
+            "message": "MAHATHI IM ON MY PHONE I SHD BE WORKING"
+        }
+    ]
 }
