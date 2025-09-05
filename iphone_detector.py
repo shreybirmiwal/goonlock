@@ -34,7 +34,7 @@ class iPhoneDetector:
         self.camera = None
         self.detection_count = 0
         self.last_notification_time = 0
-        self.notification_cooldown = 60  # seconds between notifications
+        self.notification_cooldown = 5  # seconds between notifications
         
         # Initialize YOLO model
         logger.info("Loading YOLOv8 model...")
