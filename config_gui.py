@@ -15,8 +15,8 @@ class ConfigGUI:
     def __init__(self):
         self.root = tk.Tk()
         self.root.title("iPhone Detector Configuration")
-        self.root.geometry("500x400")
-        self.root.resizable(False, False)
+        self.root.geometry("800x600")
+        self.root.resizable(True, True)
         
         self.config_file = "config.json"
         self.config = self.load_config()
@@ -154,7 +154,7 @@ class ConfigGUI:
         listbox_frame = ttk.Frame(recipients_frame)
         listbox_frame.grid(row=1, column=0, columnspan=3, sticky=(tk.W, tk.E), pady=2)
         
-        self.recipients_listbox = tk.Listbox(listbox_frame, height=6, width=60)
+        self.recipients_listbox = tk.Listbox(listbox_frame, height=10, width=80)
         scrollbar = ttk.Scrollbar(listbox_frame, orient=tk.VERTICAL, command=self.recipients_listbox.yview)
         self.recipients_listbox.configure(yscrollcommand=scrollbar.set)
         
@@ -167,17 +167,17 @@ class ConfigGUI:
         
         ttk.Label(input_frame, text="Name:").grid(row=0, column=0, sticky=tk.W, padx=(0, 5))
         self.name_var = tk.StringVar()
-        name_entry = ttk.Entry(input_frame, textvariable=self.name_var, width=15)
+        name_entry = ttk.Entry(input_frame, textvariable=self.name_var, width=20)
         name_entry.grid(row=0, column=1, padx=(0, 10))
         
         ttk.Label(input_frame, text="Phone:").grid(row=0, column=2, sticky=tk.W, padx=(0, 5))
         self.phone_var = tk.StringVar()
-        phone_entry = ttk.Entry(input_frame, textvariable=self.phone_var, width=15)
+        phone_entry = ttk.Entry(input_frame, textvariable=self.phone_var, width=20)
         phone_entry.grid(row=0, column=3, padx=(0, 10))
         
         ttk.Label(input_frame, text="Message:").grid(row=1, column=0, sticky=tk.W, padx=(0, 5), pady=(5, 0))
         self.message_var = tk.StringVar()
-        message_entry = ttk.Entry(input_frame, textvariable=self.message_var, width=40)
+        message_entry = ttk.Entry(input_frame, textvariable=self.message_var, width=60)
         message_entry.grid(row=1, column=1, columnspan=3, sticky=(tk.W, tk.E), pady=(5, 0))
         
         # Recipient buttons
