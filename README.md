@@ -1,6 +1,6 @@
 # goonlock
 
-iPhone Camera Detector with macOS Messages - A simple script that watches your camera and sends notifications when it detects an iPhone.
+Phone Camera Detector with macOS Messages - A simple script that watches your camera and sends notifications when it detects a phone using YOLOv8.
 
 ## Quick Start
 
@@ -44,6 +44,7 @@ Edit `config.json`:
 - Python 3.7+
 - OpenCV
 - NumPy
+- YOLOv8 (Ultralytics)
 - Messages app permissions
 
 ## Setup

@@ -1,0 +1,84 @@
+2025-09-04 21:01:08,190 - WARNING - Could not retrieve services list: 110:114: execution error: Messages got an error: Can’t get name of every account. (-1728)
+
+2025-09-04 21:01:08,190 - INFO - Starting iPhone detection...
+2025-09-04 21:01:10,127 - INFO - Camera initialized successfully
+2025-09-04 21:01:19,113 - INFO - Message sent successfully to 5129427299
+2025-09-04 21:01:19,113 - INFO - Notification sent for detection #1
+2025-09-04 21:01:31,795 - INFO - Interrupted by user
+2025-09-04 21:01:31,807 - INFO - Cleanup completed
+2025-09-04 21:01:42,556 - WARNING - Could not retrieve services list: 110:114: execution error: Messages got an error: Can’t get name of every account. (-1728)
+
+2025-09-04 21:01:42,556 - INFO - Starting iPhone detection...
+2025-09-04 21:01:43,778 - INFO - Camera initialized successfully
+2025-09-04 21:01:46,083 - INFO - Message sent successfully to 5129427299
+2025-09-04 21:01:46,083 - INFO - Notification sent for detection #1
+2025-09-04 21:01:47,008 - INFO - iPhone detected (cooldown active) - Detection #2
+2025-09-04 21:01:48,638 - INFO - iPhone detected (cooldown active) - Detection #3
+2025-09-04 21:01:50,907 - INFO - iPhone detected (cooldown active) - Detection #4
+2025-09-04 21:01:51,270 - INFO - iPhone detected (cooldown active) - Detection #5
+2025-09-04 21:01:51,304 - INFO - iPhone detected (cooldown active) - Detection #6
+2025-09-04 21:01:51,449 - INFO - Interrupted by user
+2025-09-04 21:01:51,497 - INFO - Cleanup completed
+2025-09-04 21:02:06,916 - WARNING - Could not retrieve services list: 110:114: execution error: Messages got an error: Can’t get name of every account. (-1728)
+
+2025-09-04 21:02:06,916 - INFO - Starting iPhone detection...
+2025-09-04 21:02:08,057 - INFO - Camera initialized successfully
+2025-09-04 21:02:47,661 - INFO - Interrupted by user
+2025-09-04 21:02:47,705 - INFO - Cleanup completed
+2025-09-04 21:02:51,868 - WARNING - Could not retrieve services list: 110:114: execution error: Messages got an error: Can’t get name of every account. (-1728)
+
+2025-09-04 21:02:51,868 - INFO - Starting iPhone detection...
+2025-09-04 21:02:52,857 - INFO - Camera initialized successfully
+2025-09-04 21:03:06,235 - INFO - Interrupted by user
+2025-09-04 21:03:06,277 - INFO - Cleanup completed
+2025-09-04 21:03:08,204 - WARNING - Could not retrieve services list: 110:114: execution error: Messages got an error: Can’t get name of every account. (-1728)
+
+2025-09-04 21:03:08,206 - INFO - Starting iPhone detection...
+2025-09-04 21:03:09,192 - INFO - Camera initialized successfully
+2025-09-04 21:03:12,482 - INFO - Message sent successfully to 5129427299
+2025-09-04 21:03:12,482 - INFO - Notification sent for detection #1
+2025-09-04 21:03:15,241 - INFO - iPhone detected (cooldown active) - Detection #2
+2025-09-04 21:03:15,270 - INFO - iPhone detected (cooldown active) - Detection #3
+2025-09-04 21:03:15,432 - INFO - iPhone detected (cooldown active) - Detection #4
+2025-09-04 21:03:15,807 - INFO - iPhone detected (cooldown active) - Detection #5
+2025-09-04 21:03:15,834 - INFO - iPhone detected (cooldown active) - Detection #6
+2025-09-04 21:03:15,898 - INFO - iPhone detected (cooldown active) - Detection #7
+2025-09-04 21:03:16,064 - INFO - iPhone detected (cooldown active) - Detection #8
+2025-09-04 21:03:16,166 - INFO - iPhone detected (cooldown active) - Detection #9
+2025-09-04 21:03:16,199 - INFO - iPhone detected (cooldown active) - Detection #10
+2025-09-04 21:03:16,233 - INFO - iPhone detected (cooldown active) - Detection #11
+2025-09-04 21:03:16,336 - INFO - iPhone detected (cooldown active) - Detection #12
+2025-09-04 21:03:16,403 - INFO - iPhone detected (cooldown active) - Detection #13
+2025-09-04 21:03:16,504 - INFO - iPhone detected (cooldown active) - Detection #14
+2025-09-04 21:03:16,537 - INFO - iPhone detected (cooldown active) - Detection #15
+2025-09-04 21:03:16,570 - INFO - iPhone detected (cooldown active) - Detection #16
+2025-09-04 21:03:16,739 - INFO - iPhone detected (cooldown active) - Detection #17
+2025-09-04 21:03:16,838 - INFO - iPhone detected (cooldown active) - Detection #18
+2025-09-04 21:03:17,334 - INFO - iPhone detected (cooldown active) - Detection #19
+2025-09-04 21:03:17,504 - INFO - iPhone detected (cooldown active) - Detection #20
+2025-09-04 21:03:17,839 - INFO - iPhone detected (cooldown active) - Detection #21
+2025-09-04 21:03:17,873 - INFO - iPhone detected (cooldown active) - Detection #22
+2025-09-04 21:03:17,902 - INFO - iPhone detected (cooldown active) - Detection #23
+2025-09-04 21:03:17,939 - INFO - iPhone detected (cooldown active) - Detection #24
+2025-09-04 21:03:18,140 - INFO - iPhone detected (cooldown active) - Detection #25
+2025-09-04 21:03:18,170 - INFO - iPhone detected (cooldown active) - Detection #26
+2025-09-04 21:03:18,307 - INFO - iPhone detected (cooldown active) - Detection #27
+2025-09-04 21:03:18,340 - INFO - iPhone detected (cooldown active) - Detection #28
+2025-09-04 21:03:18,369 - INFO - iPhone detected (cooldown active) - Detection #29
+2025-09-04 21:03:18,407 - INFO - iPhone detected (cooldown active) - Detection #30
+2025-09-04 21:03:18,435 - INFO - iPhone detected (cooldown active) - Detection #31
+2025-09-04 21:03:18,508 - INFO - iPhone detected (cooldown active) - Detection #32
+2025-09-04 21:03:18,575 - INFO - iPhone detected (cooldown active) - Detection #33
+2025-09-04 21:03:18,605 - INFO - iPhone detected (cooldown active) - Detection #34
+2025-09-04 21:03:18,639 - INFO - iPhone detected (cooldown active) - Detection #35
+2025-09-04 21:03:18,672 - INFO - iPhone detected (cooldown active) - Detection #36
+2025-09-04 21:03:18,707 - INFO - iPhone detected (cooldown active) - Detection #37
+2025-09-04 21:03:19,039 - INFO - iPhone detected (cooldown active) - Detection #38
+2025-09-04 21:03:19,070 - INFO - iPhone detected (cooldown active) - Detection #39
+2025-09-04 21:03:19,106 - INFO - iPhone detected (cooldown active) - Detection #40
+2025-09-04 21:03:19,136 - INFO - iPhone detected (cooldown active) - Detection #41
+2025-09-04 21:03:19,174 - INFO - iPhone detected (cooldown active) - Detection #42
+2025-09-04 21:03:19,241 - INFO - iPhone detected (cooldown active) - Detection #43
+2025-09-04 21:03:19,436 - INFO - iPhone detected (cooldown active) - Detection #44
+2025-09-04 21:03:19,936 - INFO - Interrupted by user
+2025-09-04 21:03:19,982 - INFO - Cleanup completed
