@@ -12,7 +12,8 @@ import logging
 from datetime import datetime
 import json
 import os
-from typing import Optional, Tuple
+import random
+from typing import Optional, Tuple, List, Dict
 from macos_messenger import MacOSMessenger
 from ultralytics import YOLO
 
@@ -55,10 +56,13 @@ class iPhoneDetector:
             "camera_index": 0,
             "detection_confidence": 0.5,
             "notification_cooldown": 60,
-            "recipient_phone_number": "",
-            "recipient_email": "",
-            "message_service": "iMessage",  # "iMessage" or "SMS"
-            "custom_message": "🚨 Phone detected!",
+            "recipients": [
+                {
+                    "name": "Mom",
+                    "phone": "",
+                    "message": "I'm on my phone while working!"
+                }
+            ],
             "detection_area": {
                 "enabled": False,
                 "x": 0,
@@ -155,18 +159,31 @@ class iPhoneDetector:
                 area['y'] <= y <= area['y'] + area['height'])
     
     def send_notification(self, message: str) -> bool:
-        """Send notification using macOS Messages app."""
-        # Determine recipient
-        recipient = self.config.get('recipient_phone_number') or self.config.get('recipient_email')
-        if not recipient:
-            logger.warning("No recipient configured. Cannot send notification.")
+        """Send notification using macOS Messages app with random recipient selection."""
+        recipients = self.config.get('recipients', [])
+        if not recipients:
+            logger.warning("No recipients configured. Cannot send notification.")
             return False
         
-        # Determine service
-        service = self.config.get('message_service', 'iMessage')
+        # Filter out recipients with empty phone numbers
+        valid_recipients = [r for r in recipients if r.get('phone', '').strip()]
+        if not valid_recipients:
+            logger.warning("No valid recipients with phone numbers. Cannot send notification.")
+            return False
+        
+        # Randomly select a recipient
+        selected_recipient = random.choice(valid_recipients)
+        recipient_name = selected_recipient.get('name', 'Unknown')
+        recipient_phone = selected_recipient.get('phone', '').strip()
+        custom_message = selected_recipient.get('message', 'Phone detected!')
+        
+        # Create the full message
+        full_message = f"{custom_message} Confidence: {message.split('Confidence: ')[1] if 'Confidence: ' in message else message}"
+        
+        logger.info(f"Selected recipient: {recipient_name} ({recipient_phone})")
         
         # Send with cooldown
-        return self.messenger.send_notification_with_cooldown(recipient, message, service)
+        return self.messenger.send_notification_with_cooldown(recipient_phone, full_message, "iMessage")
     
     def draw_detection_info(self, frame: np.ndarray, detected: bool, confidence: float, bbox: Tuple[int, int, int, int]) -> np.ndarray:
         """Draw detection information on the frame."""
@@ -235,8 +252,7 @@ class iPhoneDetector:
                     
                     # Send notification if cooldown period has passed
                     if current_time - self.last_notification_time > self.notification_cooldown:
-                        custom_msg = self.config.get('custom_message', '🚨 Phone detected!')
-                        message = f"{custom_msg} Confidence: {confidence:.2f} at {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}"
+                        message = f"Confidence: {confidence:.2f} at {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}"
                         
                         if self.send_notification(message):
                             self.last_notification_time = current_time

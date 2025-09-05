@@ -30,10 +30,13 @@ class ConfigGUI:
             "camera_index": 0,
             "detection_confidence": 0.5,
             "notification_cooldown": 60,
-            "recipient_phone_number": "",
-            "recipient_email": "",
-            "message_service": "iMessage",
-            "custom_message": "🚨 Phone detected!",
+            "recipients": [
+                {
+                    "name": "Mom",
+                    "phone": "",
+                    "message": "I'm on my phone while working!"
+                }
+            ],
             "detection_area": {
                 "enabled": False,
                 "x": 0,
@@ -65,10 +68,21 @@ class ConfigGUI:
             self.config["camera_index"] = int(self.camera_index_var.get())
             self.config["detection_confidence"] = float(self.confidence_var.get())
             self.config["notification_cooldown"] = int(self.cooldown_var.get())
-            self.config["recipient_phone_number"] = self.phone_var.get().strip()
-            self.config["recipient_email"] = self.email_var.get().strip()
-            self.config["message_service"] = self.service_var.get()
-            self.config["custom_message"] = self.message_var.get().strip()
+            
+            # Get recipients from the list
+            recipients = []
+            for i in range(self.recipients_listbox.size()):
+                item = self.recipients_listbox.get(i)
+                # Parse the display format: "Name - Phone - Message"
+                parts = item.split(" - ", 2)
+                if len(parts) == 3:
+                    recipients.append({
+                        "name": parts[0],
+                        "phone": parts[1],
+                        "message": parts[2]
+                    })
+            
+            self.config["recipients"] = recipients
             
             # Save to file
             with open(self.config_file, 'w') as f:
@@ -86,10 +100,12 @@ class ConfigGUI:
         self.camera_index_var.set(str(self.config.get("camera_index", 0)))
         self.confidence_var.set(str(self.config.get("detection_confidence", 0.5)))
         self.cooldown_var.set(str(self.config.get("notification_cooldown", 60)))
-        self.phone_var.set(self.config.get("recipient_phone_number", ""))
-        self.email_var.set(self.config.get("recipient_email", ""))
-        self.service_var.set(self.config.get("message_service", "iMessage"))
-        self.message_var.set(self.config.get("custom_message", "🚨 Phone detected!"))
+        
+        # Load recipients
+        recipients = self.config.get("recipients", [])
+        for recipient in recipients:
+            display_text = f"{recipient['name']} - {recipient['phone']} - {recipient['message']}"
+            self.recipients_listbox.insert(tk.END, display_text)
     
     def create_widgets(self):
         """Create the GUI widgets."""
@@ -127,70 +143,127 @@ class ConfigGUI:
         cooldown_entry = ttk.Entry(detection_frame, textvariable=self.cooldown_var, width=10)
         cooldown_entry.grid(row=1, column=1, sticky=tk.W, padx=(10, 0), pady=2)
         
-        # Message Settings
-        message_frame = ttk.LabelFrame(main_frame, text="Message Settings", padding="10")
-        message_frame.grid(row=3, column=0, columnspan=2, sticky=(tk.W, tk.E), pady=(0, 10))
+        # Recipients Settings
+        recipients_frame = ttk.LabelFrame(main_frame, text="Recipients", padding="10")
+        recipients_frame.grid(row=3, column=0, columnspan=2, sticky=(tk.W, tk.E), pady=(0, 10))
         
-        ttk.Label(message_frame, text="Phone Number:").grid(row=0, column=0, sticky=tk.W, pady=2)
+        # Recipients list
+        ttk.Label(recipients_frame, text="Recipients:").grid(row=0, column=0, sticky=tk.W, pady=2)
+        
+        # Listbox with scrollbar
+        listbox_frame = ttk.Frame(recipients_frame)
+        listbox_frame.grid(row=1, column=0, columnspan=3, sticky=(tk.W, tk.E), pady=2)
+        
+        self.recipients_listbox = tk.Listbox(listbox_frame, height=6, width=60)
+        scrollbar = ttk.Scrollbar(listbox_frame, orient=tk.VERTICAL, command=self.recipients_listbox.yview)
+        self.recipients_listbox.configure(yscrollcommand=scrollbar.set)
+        
+        self.recipients_listbox.grid(row=0, column=0, sticky=(tk.W, tk.E, tk.N, tk.S))
+        scrollbar.grid(row=0, column=1, sticky=(tk.N, tk.S))
+        
+        # Recipient input fields
+        input_frame = ttk.Frame(recipients_frame)
+        input_frame.grid(row=2, column=0, columnspan=3, sticky=(tk.W, tk.E), pady=(10, 0))
+        
+        ttk.Label(input_frame, text="Name:").grid(row=0, column=0, sticky=tk.W, padx=(0, 5))
+        self.name_var = tk.StringVar()
+        name_entry = ttk.Entry(input_frame, textvariable=self.name_var, width=15)
+        name_entry.grid(row=0, column=1, padx=(0, 10))
+        
+        ttk.Label(input_frame, text="Phone:").grid(row=0, column=2, sticky=tk.W, padx=(0, 5))
         self.phone_var = tk.StringVar()
-        phone_entry = ttk.Entry(message_frame, textvariable=self.phone_var, width=20)
-        phone_entry.grid(row=0, column=1, sticky=tk.W, padx=(10, 0), pady=2)
+        phone_entry = ttk.Entry(input_frame, textvariable=self.phone_var, width=15)
+        phone_entry.grid(row=0, column=3, padx=(0, 10))
         
-        ttk.Label(message_frame, text="Email (optional):").grid(row=1, column=0, sticky=tk.W, pady=2)
-        self.email_var = tk.StringVar()
-        email_entry = ttk.Entry(message_frame, textvariable=self.email_var, width=20)
-        email_entry.grid(row=1, column=1, sticky=tk.W, padx=(10, 0), pady=2)
-        
-        ttk.Label(message_frame, text="Service:").grid(row=2, column=0, sticky=tk.W, pady=2)
-        self.service_var = tk.StringVar()
-        service_combo = ttk.Combobox(message_frame, textvariable=self.service_var, 
-                                    values=["iMessage", "SMS"], width=10)
-        service_combo.grid(row=2, column=1, sticky=tk.W, padx=(10, 0), pady=2)
-        
-        ttk.Label(message_frame, text="Custom Message:").grid(row=3, column=0, sticky=tk.W, pady=2)
+        ttk.Label(input_frame, text="Message:").grid(row=1, column=0, sticky=tk.W, padx=(0, 5), pady=(5, 0))
         self.message_var = tk.StringVar()
-        message_entry = ttk.Entry(message_frame, textvariable=self.message_var, width=30)
-        message_entry.grid(row=3, column=1, sticky=tk.W, padx=(10, 0), pady=2)
+        message_entry = ttk.Entry(input_frame, textvariable=self.message_var, width=40)
+        message_entry.grid(row=1, column=1, columnspan=3, sticky=(tk.W, tk.E), pady=(5, 0))
         
-        # Buttons
+        # Recipient buttons
+        recipient_buttons = ttk.Frame(recipients_frame)
+        recipient_buttons.grid(row=3, column=0, columnspan=3, pady=(10, 0))
+        
+        ttk.Button(recipient_buttons, text="Add Recipient", 
+                  command=self.add_recipient).grid(row=0, column=0, padx=(0, 5))
+        ttk.Button(recipient_buttons, text="Remove Selected", 
+                  command=self.remove_recipient).grid(row=0, column=1, padx=(0, 5))
+        ttk.Button(recipient_buttons, text="Test All Messages", 
+                  command=self.test_all_messages).grid(row=0, column=2)
+        
+        # Main buttons
         button_frame = ttk.Frame(main_frame)
         button_frame.grid(row=4, column=0, columnspan=2, pady=(20, 0))
         
         ttk.Button(button_frame, text="Save Configuration", 
                   command=self.save_config).grid(row=0, column=0, padx=(0, 10))
-        ttk.Button(button_frame, text="Test Message", 
-                  command=self.test_message).grid(row=0, column=1, padx=(0, 10))
         ttk.Button(button_frame, text="Start Detector", 
-                  command=self.start_detector).grid(row=0, column=2)
+                  command=self.start_detector).grid(row=0, column=1)
         
         # Configure grid weights
         main_frame.columnconfigure(1, weight=1)
         detection_frame.columnconfigure(1, weight=1)
+        listbox_frame.columnconfigure(0, weight=1)
+        listbox_frame.rowconfigure(0, weight=1)
+        input_frame.columnconfigure(3, weight=1)
     
-    def test_message(self):
-        """Test sending a message with current settings."""
+    def add_recipient(self):
+        """Add a new recipient to the list."""
+        name = self.name_var.get().strip()
+        phone = self.phone_var.get().strip()
+        message = self.message_var.get().strip()
+        
+        if not name or not phone or not message:
+            messagebox.showerror("Error", "Please fill in all fields (Name, Phone, Message)")
+            return
+        
+        display_text = f"{name} - {phone} - {message}"
+        self.recipients_listbox.insert(tk.END, display_text)
+        
+        # Clear input fields
+        self.name_var.set("")
+        self.phone_var.set("")
+        self.message_var.set("")
+    
+    def remove_recipient(self):
+        """Remove selected recipient from the list."""
+        selection = self.recipients_listbox.curselection()
+        if selection:
+            self.recipients_listbox.delete(selection[0])
+        else:
+            messagebox.showwarning("Warning", "Please select a recipient to remove")
+    
+    def test_all_messages(self):
+        """Test sending messages to all recipients."""
         try:
             from macos_messenger import MacOSMessenger
             
-            messenger = MacOSMessenger()
-            recipient = self.phone_var.get().strip() or self.email_var.get().strip()
-            
-            if not recipient:
-                messagebox.showerror("Error", "Please enter a phone number or email")
+            if self.recipients_listbox.size() == 0:
+                messagebox.showerror("Error", "No recipients configured")
                 return
             
-            test_message = "🧪 Test message from iPhone Detector Configuration"
-            success = messenger.send_message(recipient, test_message, self.service_var.get())
+            messenger = MacOSMessenger()
+            success_count = 0
             
-            if success:
-                messagebox.showinfo("Success", "Test message sent successfully!")
+            for i in range(self.recipients_listbox.size()):
+                item = self.recipients_listbox.get(i)
+                parts = item.split(" - ", 2)
+                if len(parts) == 3:
+                    name, phone, message = parts
+                    test_message = f"🧪 Test from {name}: {message}"
+                    
+                    if messenger.send_message(phone, test_message, "iMessage"):
+                        success_count += 1
+            
+            if success_count > 0:
+                messagebox.showinfo("Success", f"Test messages sent to {success_count} recipients!")
             else:
-                messagebox.showerror("Error", "Failed to send test message")
+                messagebox.showerror("Error", "Failed to send test messages")
                 
         except ImportError:
             messagebox.showerror("Error", "macOS messenger module not found")
         except Exception as e:
-            messagebox.showerror("Error", f"Error sending test message: {e}")
+            messagebox.showerror("Error", f"Error sending test messages: {e}")
     
     def start_detector(self):
         """Start the iPhone detector with current configuration."""
