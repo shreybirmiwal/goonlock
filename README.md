@@ -146,3 +146,4 @@ The script creates detailed logs in `iphone_detector.log` including:
 ## License
 
 This project is for educational and personal use. Please respect privacy and local laws when using camera monitoring software.
+# goonlock
