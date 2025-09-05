@@ -178,7 +178,7 @@ class iPhoneDetector:
         custom_message = selected_recipient.get('message', 'Phone detected!')
         
         # Create the full message
-        full_message = f"{custom_message} Confidence: {message.split('Confidence: ')[1] if 'Confidence: ' in message else message}"
+        full_message = f"FROM SHREYS IPHONE DETECT APP: {custom_message}"
         
         logger.info(f"Selected recipient: {recipient_name} ({recipient_phone})")
         

@@ -15,7 +15,7 @@ class ConfigGUI:
     def __init__(self):
         self.root = tk.Tk()
         self.root.title("iPhone Detector Configuration")
-        self.root.geometry("800x600")
+        self.root.geometry("800x800")
         self.root.resizable(True, True)
         
         self.config_file = "config.json"
