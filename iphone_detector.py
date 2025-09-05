@@ -203,8 +203,11 @@ class iPhoneDetector:
         status_msg = "DETECTED" if detected else "SCANNING"
         cv2.putText(frame, status_msg, (10, 120), cv2.FONT_HERSHEY_SIMPLEX, 0.6, status_color, 2)
         
+        # Show monitoring status
+        cv2.putText(frame, "MONITORING ACTIVE", (10, 150), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 255), 1)
+        
         timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-        cv2.putText(frame, timestamp, (10, 150), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255, 255, 255), 1)
+        cv2.putText(frame, timestamp, (10, 180), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255, 255, 255), 1)
         
         return frame
     
@@ -235,9 +238,9 @@ class iPhoneDetector:
                         
                         if self.send_notification(message):
                             self.last_notification_time = current_time
-                            logger.info(f"Notification sent for detection #{self.detection_count}")
+                            logger.info(f"Notification sent for detection #{self.detection_count} - continuing to monitor...")
                         else:
-                            logger.warning("Failed to send notification")
+                            logger.warning("Failed to send notification - continuing to monitor...")
                     else:
                         logger.info(f"Phone detected (cooldown active) - Detection #{self.detection_count}")
                 
